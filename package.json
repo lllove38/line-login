@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": false,
   "scripts": {
+      "build": "next build",
     "now-start": "node",
     "start":"nodemon"
   },
