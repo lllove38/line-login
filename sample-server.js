@@ -5,7 +5,7 @@ require("dotenv").config();
 const app = require('express')();
 const session = require("express-session");
 const session_options = {
-    secret: process.env.LINE_LOGIN_CHANNEL_SECRET,
+    secret: "2ed8ced7584d201e77d8930ec3c9cb6d",
     resave: false,
     saveUninitialized: false
 }
@@ -15,14 +15,18 @@ let line_login;
 if (process.env.NODE_ENV == "development"){
     line_login = require("./module/line-login");
 } else {
-    line_login = require("line-login");
+    line_login = require("./module/line-login");
 }
 
 const login = new line_login({
-    channel_id: process.env.LINE_LOGIN_CHANNEL_ID,
-    channel_secret: process.env.LINE_LOGIN_CHANNEL_SECRET,
-    callback_url: process.env.LINE_LOGIN_CALLBACK_URL,
-    scope: "openid profile",
+    channel_id: "1607908151",
+    channel_secret: "2ed8ced7584d201e77d8930ec3c9cb6d",
+    //channel_id: process.env.LINE_LOGIN_CHANNEL_ID,
+    //channel_secret: process.env.LINE_LOGIN_CHANNEL_SECRET,
+    //callback_url: process.env.LINE_LOGIN_CALLBACK_URL,
+   //callback_url: "https://bots.dialogflow.com/line/c5553eb1-7812-460e-aac8-d813ec0f7083/webhook",
+    callback_url:"https://mystifying-heisenberg-10dfb3.netlify.com/",
+   scope: "openid profile email",
     prompt: "consent",
     bot_prompt: "normal"
 });
