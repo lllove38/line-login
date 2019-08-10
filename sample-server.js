@@ -24,8 +24,8 @@ const login = new line_login({
     //channel_id: process.env.LINE_LOGIN_CHANNEL_ID,
     //channel_secret: process.env.LINE_LOGIN_CHANNEL_SECRET,
     //callback_url: process.env.LINE_LOGIN_CALLBACK_URL,
-   //callback_url: "https://bots.dialogflow.com/line/c5553eb1-7812-460e-aac8-d813ec0f7083/webhook",
-    callback_url:"https://mystifying-heisenberg-10dfb3.netlify.com/",
+   callback_url: "https://bots.dialogflow.com/line/c5553eb1-7812-460e-aac8-d813ec0f7083/webhook",
+    //callback_url:"https://mystifying-heisenberg-10dfb3.netlify.com/",
    scope: "openid profile email",
     prompt: "consent",
     bot_prompt: "normal"
