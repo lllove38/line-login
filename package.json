@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": false,
   "scripts": {
-    "build": "node sample-server.js"
+    "start": "node sample-server.js"
   },
   "repository": {
     "type": "git",
