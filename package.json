@@ -5,8 +5,9 @@
   "main": "index.js",
   "private": false,
   "scripts": {
-    "start": "node sample-server.js",
-    "test": "mocha --exit"
+    "build": "node sample-server.js build --output public"
+    //"start": "node sample-server.js",
+    //"test": "mocha --exit"
   },
   "repository": {
     "type": "git",
