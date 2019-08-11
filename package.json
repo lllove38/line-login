@@ -2,10 +2,10 @@
   "name": "line-login",
   "version": "1.0.14",
   "description": "SDK to use LINE Login in express based node.js application",
-  "main": "index.js",
+  "main": "node sample-server.js",
   "private": false,
   "scripts": {
-    "now-start": "node index.js"
+    "now-start": "node sample-server.js"
   },
   "repository": {
     "type": "git",
