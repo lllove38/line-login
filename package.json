@@ -5,9 +5,7 @@
   "main": "index.js",
   "private": false,
   "scripts": {
-      "build": "next build",
-    "now-start": "node",
-    "start":"nodemon"
+    "now-start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +33,7 @@
     "secure-compare": "^3.0.1"
   },
   "devDependencies": {
+    "@now/node": "^0.12.5",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "mocha": "^4.1.0"
