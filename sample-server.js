@@ -24,7 +24,7 @@ const login = new line_login({
     //channel_id: process.env.LINE_LOGIN_CHANNEL_ID,
     //channel_secret: process.env.LINE_LOGIN_CHANNEL_SECRET,
     //callback_url: process.env.LINE_LOGIN_CALLBACK_URL,
-   callback_url: "http://localhost:5000/callback",
+   callback_url: "https://line-login.nathakit999.now.sh/callback",
     //callback_url:"https://mystifying-heisenberg-10dfb3.netlify.com/",
    scope: "openid profile email",
     prompt: "consent",
