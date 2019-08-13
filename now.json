@@ -2,6 +2,11 @@
 "builds":[{"src":"sample-server.js","use":"@now/node-server"}],
 "routes":[
     {
+        "src":"./callback",
+        "dest":"sample-server.js",
+        "methods":["GET"]
+    },
+    {
         "src":"./*",
         "dest":"sample-server.js",
         "methods":["GET"]
